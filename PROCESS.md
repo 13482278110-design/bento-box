@@ -1,50 +1,72 @@
-# BENTO BOX — Development Process
+# Development Process — BENTO BOX
 
-**Course:** SD5913 — Programming for Artists and Designers
+## Project Overview
 
-**Project:** BENTO BOX — Interactive Task Planner
+BENTO BOX is an interactive task planner that turns time into food. Each food portion represents one hour of work, allowing users to organise their daily tasks by creating a personalised bento box.
 
-## 1. Project Overview
+The project explores how visual interaction can make time management more playful and engaging.
 
-BENTO BOX is an interactive task planner that transforms working hours into food portions. Each hour represents one portion of food, allowing users to organize tasks by creating their own meal.
+## Previous Development — Retrospective
 
-## 2. Development Timeline
+*This section summarises work completed before I started documenting the project on GitHub on 24 October 2026.*
 
-This section documents the project's design decisions, implementation, challenges, and iterations.
+### 1. Concept and Interaction Design
 
-### Initial Concept
-Exploring how task planning can become a playful and visual experience.
+I started with the idea of transforming a traditional to-do list into an interactive food arrangement experience.
 
-### Food and Container System
-Developing six food themes and different container capacities.
+I established the main interaction rules: users select a food item, enter a task name, choose its duration, and add it to their bento box. Each food portion represents one hour.
 
-### Core Interaction
-Designing the task creation, duration adjustment, and food selection workflow.
+I also introduced different container sizes for different planning durations.
 
-### Visual and Layout Iterations
-Improving food arrangement, proportions, grouping, and overall visual consistency.
+### 2. Visual Exploration and Food Assets
 
-### Current Development
-Exploring a priority-based food arrangement system.
+I explored different illustration styles before choosing a soft, semi-3D visual direction with rounded shapes, matte textures, and a top-down perspective.
 
-*Earlier stages are being reconstructed from existing design files and discussion records. Dates and implementation details will be verified before being added.*
+I developed six food themes and experimented with different food assets to make the experience more customisable.
 
-## 3. Challenges and Design Decisions
+### 3. Prototype Development
 
-To be updated with screenshots, comparisons, and explanations of changes.
+I used AI-assisted coding to develop the interactive prototype.
 
-## 4. AI Usage and Reflection
+The prototype includes task creation and editing, time capacity selection, food arrangement, and exporting a completed plan.
 
-To be updated with examples of AI-assisted development, limitations, and personal design decisions.
+I iterated through several prototype versions, including V4 and V5, and explored automated tests to check the functionality.
 
-## 5. User Testing
+### 4. Problems Identified
 
-To be completed after prototype testing.
+One of the biggest challenges was the automatic arrangement of food.
 
-## 6. Next Steps
+Although the system could place food inside containers, the results sometimes looked too mechanical. Food proportions, spacing, and grouping needed further refinement.
 
-- Complete the interactive prototype.
-- Test food arrangement and error handling.
-- Conduct user testing.
-- Document feedback and improvements.
-- Prepare the final submission.
+This became the main focus of the next development stage.
+
+## 24 October 2026 — Development Log
+
+**Focus: Improving food arrangement and documenting the development process.**
+
+Today, I continued exploring a more natural food arrangement system. I focused on grouping similar food items, improving spacing, and creating a more balanced composition.
+
+I also reviewed previous project files and started organising the development history on GitHub.
+
+**What I learned:** A layout that works technically does not necessarily produce a good visual experience. I need to consider both interaction logic and visual composition.
+
+**Next steps:** Refine the food arrangement, test the interactive experience with a user, and document the feedback and changes.
+
+## AI Usage and Reflection
+
+I used AI throughout the project for brainstorming, visual exploration, asset generation, coding assistance, and testing.
+
+AI helped me explore ideas and build prototypes more quickly. However, I found that generated results often needed significant refinement, especially in visual consistency and layout quality.
+
+My role was to define the interaction rules, evaluate the outputs, identify problems, and decide how the design should evolve.
+
+## User Testing
+
+*To be completed after conducting a real user test.*
+
+## Next Steps
+
+- Refine the visual arrangement of food.
+- Verify the final prototype's functionality.
+- Conduct and document a user test.
+- Prepare the final GitHub submission.
