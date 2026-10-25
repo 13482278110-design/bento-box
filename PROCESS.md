@@ -97,3 +97,48 @@ AI helped me explore different solutions quickly, but the generated results did 
 - Compare the results with the visual references.
 - Improve the layout algorithm based on these tests.
 - Conduct user testing once the prototype is stable.
+
+## October 25, 2026 — Plating System Development
+
+Today, I continued improving the food arrangement system in BENTO BOX.
+
+The previous prototype could successfully turn task durations into food portions, but the arrangement still looked too mechanical. Some food items were placed in straight rows, and the overall composition lacked balance.
+
+I worked with AI to explore a revised version, focusing on food proportions, grouping, and different layouts for the six containers.
+
+### Visual Development
+
+**1. Previous Prototype**
+
+The earlier version demonstrated the basic interaction and food arrangement, but the composition still needed improvement.
+
+![Previous Prototype](images/01-previous-prototype.png)
+
+**2. Updated Prototype — October 25**
+
+I explored new arrangements for all six food themes, aiming for more natural grouping, balanced proportions, and better use of space.
+
+This version is still being refined, especially the automatic arrangement system.
+
+![Updated Prototype](images/02-updated-prototype.png)
+
+**3. Plating Composition Reference**
+
+I used this reference to study how food can be distributed more naturally within different containers.
+
+The main focus is on spatial relationships, food grouping, and visual fullness, rather than copying the illustration style or ingredients.
+
+![Plating Composition Reference](images/03-plating-composition-reference.png)
+
+### Reflection on AI
+
+AI helped me generate and compare different design approaches quickly. However, I realised that creating an attractive static composition is different from developing a system that can automatically arrange food based on user input.
+
+I still need to refine the rules and test whether the results remain visually consistent with different food combinations.
+
+### Next Steps
+
+- Improve the automatic plating algorithm.
+- Test different food combinations and task durations.
+- Compare generated results with the intended visual direction.
+- Conduct user testing once the prototype is stable.
