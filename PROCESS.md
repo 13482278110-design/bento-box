@@ -112,7 +112,7 @@ I worked with AI to explore a revised version, focusing on food proportions, gro
 
 The earlier version demonstrated the basic interaction and food arrangement, but the composition still needed improvement.
 
-![Previous Prototype](images/01-previous-prototype.png)
+![Previous Prototype](images/Previous%20Prototype.png)
 
 **2. Updated Prototype — October 25**
 
@@ -120,7 +120,7 @@ I explored new arrangements for all six food themes, aiming for more natural gro
 
 This version is still being refined, especially the automatic arrangement system.
 
-![Updated Prototype](images/02-updated-prototype.png)
+![Updated Prototype](images/Updated%20Prototype%20%28October%2025%29.png)
 
 **3. Plating Composition Reference**
 
@@ -128,7 +128,7 @@ I used this reference to study how food can be distributed more naturally within
 
 The main focus is on spatial relationships, food grouping, and visual fullness, rather than copying the illustration style or ingredients.
 
-![Plating Composition Reference](images/03-plating-composition-reference.png)
+![Plating Composition Reference](images/Plating%20Composition%20Reference.png)
 
 ### Reflection on AI
 
