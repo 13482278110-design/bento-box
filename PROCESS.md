@@ -70,3 +70,30 @@ My role was to define the interaction rules, evaluate the outputs, identify prob
 - Verify the final prototype's functionality.
 - Conduct and document a user test.
 - Prepare the final GitHub submission.
+
+
+## October 25, 2026 — Plating System Evaluation
+
+Today, I continued improving the automatic food arrangement in BENTO BOX.
+
+Although the main interactions were working, the generated layouts still had several problems. Some food items were arranged in straight rows, others had inconsistent sizes, and the plates often looked too empty.
+
+I used AI to test different layout approaches and analyse the results. Based on these tests, I refined four design principles:
+
+- **Food Priority:** Main dishes should form the visual focus, supported by smaller ingredients.
+- **Full Plating:** Food should fill the available space naturally without adding extra portions.
+- **Size Consistency:** Different ingredients should maintain balanced visual proportions.
+- **Natural Arrangement:** Similar ingredients should be grouped together without rigid grid layouts.
+
+After several iterations, I realised that small adjustments to the existing algorithm were not enough. I decided to plan a new V7 plating system while keeping the original V5 interface, interaction rules, and food assets.
+
+### Reflection on AI
+
+AI helped me explore different solutions quickly, but the generated results did not always meet my design expectations. I found that giving more detailed instructions was not enough on its own. I also needed to compare the actual results, identify recurring problems, and reconsider the overall approach.
+
+### Next Steps
+
+- Develop six 8-hour plating examples.
+- Compare the results with the visual references.
+- Improve the layout algorithm based on these tests.
+- Conduct user testing once the prototype is stable.
