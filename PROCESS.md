@@ -142,3 +142,25 @@ I still need to refine the rules and test whether the results remain visually co
 - Test different food combinations and task durations.
 - Compare generated results with the intended visual direction.
 - Conduct user testing once the prototype is stable.
+
+Over the past two days, I noticed several problems with the automatic food arrangement in BENTO BOX. Some ingredients appeared too large or too small, the food was sometimes arranged in straight lines, and certain areas of the plate looked too crowded while others were almost empty. The overall result did not always look like a naturally arranged meal.
+
+Today, I mainly focused on improving these problems.
+
+1. Adjusting Ingredient Sizes
+
+I reviewed the sizes of all 144 ingredients and simplified the original five size categories into four: XS, S, M, and L. This helped create more consistent proportions between different foods, especially when several ingredients appeared together.
+
+2. Improving Food Placement
+
+I refined the arrangement rules so that the same ingredients would stay together instead of being scattered across the plate. I also adjusted the positioning logic to create more natural groupings rather than simple rows or evenly spaced grids.
+
+3. Improving Visual Balance
+
+I introduced composition priorities (P1–P4) to help determine which foods should become the main visual elements and which should support the arrangement. I also considered the balance of colors, food quantities, and empty space, so that the plate would look more natural at different planning capacities.
+
+4. Using AI to Refine the Rules
+
+I used ChatGPT to analyze the problems, organize the ingredient classifications, and write more specific instructions for Codex. During this process, I found that AI did not always apply the rules correctly, so I needed to review the generated results and make further adjustments.
+
+This iteration helped me better understand how ingredient size, positioning, and visual composition work together. V7.1 is now the latest version of the prototype, and my next step is to explore more direct interactions with the food itself.
