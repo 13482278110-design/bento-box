@@ -164,3 +164,20 @@ I introduced composition priorities (P1–P4) to help determine which foods shou
 I used ChatGPT to analyze the problems, organize the ingredient classifications, and write more specific instructions for Codex. During this process, I found that AI did not always apply the rules correctly, so I needed to review the generated results and make further adjustments.
 
 This iteration helped me better understand how ingredient size, positioning, and visual composition work together. V7.1 is now the latest version of the prototype, and my next step is to explore more direct interactions with the food itself.
+
+## October 27, 2026 — Interaction & Task Management Update
+
+Yesterday, I focused on improving food arrangement. Today, I worked on the interaction flow and task management system.
+
+### Key Updates
+- **User Flow:** Separated Bento creation from task management.
+- **My Collection:** Added In Progress and Completed categories.
+- **Task Interaction:** Completed tasks remove their food from the active Bento, while the final card displays completed portions.
+- **Progress:** Changed to Completed Hours / Total Planned Hours.
+- **UI Refinement:** Standardised Edit buttons, improved text wrapping, and prevented duplicate task names.
+
+### AI Reflection
+I used ChatGPT to clarify interaction rules and Codex to implement changes. This helped me realise that functional features also need a clear and consistent user flow.
+
+### Next Steps
+Test the updated prototype, fix remaining issues, and conduct user testing.
