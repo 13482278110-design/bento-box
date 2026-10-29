@@ -181,3 +181,25 @@ I used ChatGPT to clarify interaction rules and Codex to implement changes. This
 
 ### Next Steps
 Test the updated prototype, fix remaining issues, and conduct user testing.
+
+## October 29, 2026 — Navigation & Interaction Refinement
+
+Today, I focused on improving the overall user flow and task management system, preparing BENTO BOX for user testing tomorrow.
+
+### Key Updates
+
+- **Navigation:** Simplified the page headers by removing repeated page labels and unnecessary Home links, creating a clearer navigation structure.
+- **Bento Management:** Added Rename and Delete options for both In Progress and Completed Bentos. Users can customise Bento names while keeping the automatically generated names as defaults.
+- **Repeated Editing:** Adjusted the editing flow so users can save changes and reopen the same Bento multiple times. A Bento should only move to Completed when the user explicitly selects "Finish Bento".
+- **Capacity Extension:** Refined the +4h mechanism. Initial planning must stay within the selected capacity (4h / 8h / 12h / 24h). The extra 4 hours should only become available when editing a saved In Progress Bento.
+- **Data & Progress:** Focused on keeping task progress, Bento status, and saved information consistent across multiple editing sessions.
+
+### AI Reflection
+
+I used ChatGPT to review the interaction logic and organise clearer instructions for Codex. During this process, I identified several problems that were not obvious when designing individual screens, especially the difference between creating a Bento and managing it later.
+
+This helped me understand that a working prototype needs more than functional buttons. Users also need clear navigation, predictable behaviour, and the freedom to adjust their plans.
+
+### Next Steps
+
+Verify the updated interactions, check for remaining bugs, and prepare for user testing on October 30. The testing will focus on whether first-time users can understand the concept, complete the planning process, and manage their Bentos without additional instructions.
