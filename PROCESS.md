@@ -1,205 +1,263 @@
 # Development Process — BENTO BOX
 
-## Project Overview
+## 01. Project Overview
 
-BENTO BOX is an interactive task planner that turns time into food. Each food portion represents one hour of work, allowing users to organise their daily tasks by creating a personalised bento box.
+BENTO BOX is an interactive time-planning experience that transforms daily tasks into food arrangements. Each food portion represents one hour of work, allowing users to organise their time by creating a personalised bento box.
 
-The project explores how visual interaction can make time management more playful and engaging.
+The project explores how a playful visual metaphor can make planning more engaging and encourage users to interact with their daily schedules in a different way.
 
-## Previous Development — Retrospective
+This document records the development process, design iterations, challenges, AI-assisted workflow, and user testing.
 
-*This section summarises work completed before I started documenting the project on GitHub on 24 October 2026.*
+---
 
-### 1. Concept and Interaction Design
+## 02. Early Development — Concept & Prototype
 
-I started with the idea of transforming a traditional to-do list into an interactive food arrangement experience.
+*This section summarises the work completed before I started documenting the project on GitHub on October 24, 2026.*
 
-I established the main interaction rules: users select a food item, enter a task name, choose its duration, and add it to their bento box. Each food portion represents one hour.
+### Concept Development
 
-I also introduced different container sizes for different planning durations.
+I began by exploring how to turn a traditional to-do list into a more playful and visual experience.
 
-### 2. Visual Exploration and Food Assets
+Instead of entering tasks into a standard list, users select food items, assign task names and durations, and arrange their time inside a bento box.
 
-I explored different illustration styles before choosing a soft, semi-3D visual direction with rounded shapes, matte textures, and a top-down perspective.
+The main interaction rule is simple:
 
-I developed six food themes and experimented with different food assets to make the experience more customisable.
+**One food portion = One hour of work.**
 
-### 3. Prototype Development
+I also introduced different container sizes to represent different planning capacities.
 
-I used AI-assisted coding to develop the interactive prototype.
+### Visual Exploration
 
-The prototype includes task creation and editing, time capacity selection, food arrangement, and exporting a completed plan.
+I experimented with different illustration styles before choosing a soft, semi-3D visual direction with rounded shapes, matte textures, and a consistent top-down perspective.
 
-I iterated through several prototype versions, including V4 and V5, and explored automated tests to check the functionality.
+I developed six bento themes, each with its own food assets and container design.
 
-### 4. Problems Identified
+### Initial Prototype
 
-One of the biggest challenges was the automatic arrangement of food.
+With AI-assisted coding, I developed early interactive prototypes, including V4 and V5.
 
-Although the system could place food inside containers, the results sometimes looked too mechanical. Food proportions, spacing, and grouping needed further refinement.
+These versions established the basic functions:
 
-This became the main focus of the next development stage.
+- Selecting a bento theme and time capacity
+- Adding and editing tasks
+- Converting task durations into food portions
+- Automatically arranging food
+- Generating and exporting a bento card
 
-## 24 October 2026 — Development Log
+### Initial Challenges
 
-**Focus: Improving food arrangement and documenting the development process.**
+The main challenge was the automatic food arrangement.
 
-Today, I continued exploring a more natural food arrangement system. I focused on grouping similar food items, improving spacing, and creating a more balanced composition.
+Although the prototype could place food inside containers, the results often looked too mechanical. Some ingredients were arranged in straight rows, while others had inconsistent sizes or left too much empty space.
 
-I also reviewed previous project files and started organising the development history on GitHub.
+This led me to focus on improving the visual arrangement system.
 
-**What I learned:** A layout that works technically does not necessarily produce a good visual experience. I need to consider both interaction logic and visual composition.
+---
 
-**Next steps:** Refine the food arrangement, test the interactive experience with a user, and document the feedback and changes.
+## 03. Development Log
 
-## AI Usage and Reflection
+### October 24, 2026 — Food Arrangement Exploration
 
-I used AI throughout the project for brainstorming, visual exploration, asset generation, coding assistance, and testing.
+**Focus: Improving visual composition and documenting the development process.**
 
-AI helped me explore ideas and build prototypes more quickly. However, I found that generated results often needed significant refinement, especially in visual consistency and layout quality.
+I continued exploring ways to make food arrangements look more natural.
 
-My role was to define the interaction rules, evaluate the outputs, identify problems, and decide how the design should evolve.
+I focused on grouping similar ingredients, improving spacing, and creating more balanced compositions within different containers.
 
-## User Testing
+I also started organising the development history and project files on GitHub.
 
-*To be completed after conducting a real user test.*
+**What I Learned**
 
-## Next Steps
+A technically functional layout does not always create a good visual experience. The arrangement system needs to consider visual balance as well as interaction rules.
 
-- Refine the visual arrangement of food.
-- Verify the final prototype's functionality.
-- Conduct and document a user test.
-- Prepare the final GitHub submission.
+### October 25, 2026 — Plating System Development
 
+**Focus: Food proportions, grouping, and natural arrangement.**
 
-## October 25, 2026 — Plating System Evaluation
+I evaluated the previous prototype and identified several recurring problems:
 
-Today, I continued improving the automatic food arrangement in BENTO BOX.
+- Some food items appeared too large or too small.
+- Ingredients were often arranged in straight rows.
+- Similar ingredients were scattered across the container.
+- Some areas looked overcrowded while others remained empty.
 
-Although the main interactions were working, the generated layouts still had several problems. Some food items were arranged in straight rows, others had inconsistent sizes, and the plates often looked too empty.
+I realised that small adjustments to the existing layout algorithm were not enough. I decided to develop a revised V7 plating system while keeping the original interface, interaction rules, and food assets.
 
-I used AI to test different layout approaches and analyse the results. Based on these tests, I refined four design principles:
+#### Visual Comparison
 
-- **Food Priority:** Main dishes should form the visual focus, supported by smaller ingredients.
-- **Full Plating:** Food should fill the available space naturally without adding extra portions.
-- **Size Consistency:** Different ingredients should maintain balanced visual proportions.
-- **Natural Arrangement:** Similar ingredients should be grouped together without rigid grid layouts.
+**Previous Prototype**
 
-After several iterations, I realised that small adjustments to the existing algorithm were not enough. I decided to plan a new V7 plating system while keeping the original V5 interface, interaction rules, and food assets.
-
-### Reflection on AI
-
-AI helped me explore different solutions quickly, but the generated results did not always meet my design expectations. I found that giving more detailed instructions was not enough on its own. I also needed to compare the actual results, identify recurring problems, and reconsider the overall approach.
-
-### Next Steps
-
-- Develop six 8-hour plating examples.
-- Compare the results with the visual references.
-- Improve the layout algorithm based on these tests.
-- Conduct user testing once the prototype is stable.
-
-## October 25, 2026 — Plating System Development
-
-Today, I continued improving the food arrangement system in BENTO BOX.
-
-The previous prototype could successfully turn task durations into food portions, but the arrangement still looked too mechanical. Some food items were placed in straight rows, and the overall composition lacked balance.
-
-I worked with AI to explore a revised version, focusing on food proportions, grouping, and different layouts for the six containers.
-
-### Visual Development
-
-**1. Previous Prototype**
-
-The earlier version demonstrated the basic interaction and food arrangement, but the composition still needed improvement.
+The earlier version demonstrated the basic interaction system, but the food composition still needed improvement.
 
 ![Previous Prototype](images/Previous%20Prototype.png)
 
-**2. Updated Prototype — October 25**
+**Updated Prototype — October 25**
 
-I explored new arrangements for all six food themes, aiming for more natural grouping, balanced proportions, and better use of space.
-
-This version is still being refined, especially the automatic arrangement system.
+I explored new arrangements across all six themes, focusing on more natural grouping, consistent proportions, and better use of space.
 
 ![Updated Prototype](images/Updated%20Prototype%20%28October%2025%29.png)
 
-**3. Plating Composition Reference**
+**Plating Composition Reference**
 
-I used this reference to study how food can be distributed more naturally within different containers.
-
-The main focus is on spatial relationships, food grouping, and visual fullness, rather than copying the illustration style or ingredients.
+I used this reference to study food distribution, spatial relationships, and visual fullness rather than copying its illustration style.
 
 ![Plating Composition Reference](images/Plating%20Composition%20Reference.png)
 
-### Reflection on AI
+#### Key Improvements
 
-AI helped me generate and compare different design approaches quickly. However, I realised that creating an attractive static composition is different from developing a system that can automatically arrange food based on user input.
+**1. Ingredient Size Classification**
 
-I still need to refine the rules and test whether the results remain visually consistent with different food combinations.
+I reviewed the proportions of 144 food assets and simplified the original five size categories into four: XS, S, M, and L.
 
-### Next Steps
+This helped establish more consistent visual relationships between ingredients.
 
-- Improve the automatic plating algorithm.
-- Test different food combinations and task durations.
-- Compare generated results with the intended visual direction.
-- Conduct user testing once the prototype is stable.
+**2. Food Placement**
 
-Over the past two days, I noticed several problems with the automatic food arrangement in BENTO BOX. Some ingredients appeared too large or too small, the food was sometimes arranged in straight lines, and certain areas of the plate looked too crowded while others were almost empty. The overall result did not always look like a naturally arranged meal.
+I refined the placement rules to keep similar ingredients together and reduce rigid rows or grid-like arrangements.
 
-Today, I mainly focused on improving these problems.
+**3. Visual Composition**
 
-1. Adjusting Ingredient Sizes
+I introduced composition priorities (P1–P4) to distinguish main visual elements from supporting ingredients.
 
-I reviewed the sizes of all 144 ingredients and simplified the original five size categories into four: XS, S, M, and L. This helped create more consistent proportions between different foods, especially when several ingredients appeared together.
+I also considered food quantities, colour balance, and empty space across different container sizes.
 
-2. Improving Food Placement
+**4. AI-Assisted Iteration**
 
-I refined the arrangement rules so that the same ingredients would stay together instead of being scattered across the plate. I also adjusted the positioning logic to create more natural groupings rather than simple rows or evenly spaced grids.
+I used ChatGPT to analyse visual problems and organise clearer requirements for Codex.
 
-3. Improving Visual Balance
+However, the generated results did not always follow the intended rules, so I repeatedly compared the output with my design references and adjusted the instructions.
 
-I introduced composition priorities (P1–P4) to help determine which foods should become the main visual elements and which should support the arrangement. I also considered the balance of colors, food quantities, and empty space, so that the plate would look more natural at different planning capacities.
+#### Outcome & Reflection
 
-4. Using AI to Refine the Rules
+This iteration led to the V7.1 prototype and a clearer understanding of how ingredient size, positioning, and visual composition affect the overall experience.
 
-I used ChatGPT to analyze the problems, organize the ingredient classifications, and write more specific instructions for Codex. During this process, I found that AI did not always apply the rules correctly, so I needed to review the generated results and make further adjustments.
+I also learned that creating an attractive static image is different from building a system that can automatically generate balanced arrangements from different user inputs.
 
-This iteration helped me better understand how ingredient size, positioning, and visual composition work together. V7.1 is now the latest version of the prototype, and my next step is to explore more direct interactions with the food itself.
+### October 27, 2026 — Interaction & Task Management
 
-## October 27, 2026 — Interaction & Task Management Update
+**Focus: Improving the user flow beyond the initial Bento creation process.**
 
-Yesterday, I focused on improving food arrangement. Today, I worked on the interaction flow and task management system.
+After focusing on visual arrangement, I shifted my attention to how users manage their tasks after generating a Bento.
 
-### Key Updates
-- **User Flow:** Separated Bento creation from task management.
-- **My Collection:** Added In Progress and Completed categories.
-- **Task Interaction:** Completed tasks remove their food from the active Bento, while the final card displays completed portions.
-- **Progress:** Changed to Completed Hours / Total Planned Hours.
-- **UI Refinement:** Standardised Edit buttons, improved text wrapping, and prevented duplicate task names.
+#### Key Updates
 
-### AI Reflection
-I used ChatGPT to clarify interaction rules and Codex to implement changes. This helped me realise that functional features also need a clear and consistent user flow.
+- **User Flow:** Separated Bento creation from ongoing task management.
+- **My Collection:** Introduced In Progress and Completed categories.
+- **Task Interaction:** Adjusted food visibility to reflect task completion and progress.
+- **Progress Tracking:** Changed the progress display to Completed Hours / Total Planned Hours.
+- **UI Refinement:** Standardised Edit buttons, improved text wrapping, and added duplicate task-name validation.
 
-### Next Steps
-Test the updated prototype, fix remaining issues, and conduct user testing.
+#### Reflection
 
-## October 29, 2026 — Navigation & Interaction Refinement
+I used ChatGPT to clarify the interaction rules and Codex to support implementation.
 
-Today, I focused on improving the overall user flow and task management system, preparing BENTO BOX for user testing tomorrow.
+This process helped me realise that functional features are not enough on their own. They also need to form a clear and consistent experience across different stages of use.
 
-### Key Updates
+### October 29, 2026 — Navigation & Editing Refinement
 
-- **Navigation:** Simplified the page headers by removing repeated page labels and unnecessary Home links, creating a clearer navigation structure.
-- **Bento Management:** Added Rename and Delete options for both In Progress and Completed Bentos. Users can customise Bento names while keeping the automatically generated names as defaults.
-- **Repeated Editing:** Adjusted the editing flow so users can save changes and reopen the same Bento multiple times. A Bento should only move to Completed when the user explicitly selects "Finish Bento".
-- **Capacity Extension:** Refined the +4h mechanism. Initial planning must stay within the selected capacity (4h / 8h / 12h / 24h). The extra 4 hours should only become available when editing a saved In Progress Bento.
-- **Data & Progress:** Focused on keeping task progress, Bento status, and saved information consistent across multiple editing sessions.
+**Focus: Improving usability and preparing for user testing.**
 
-### AI Reflection
+I reviewed the overall experience and identified several issues related to navigation, saved Bentos, and repeated editing.
 
-I used ChatGPT to review the interaction logic and organise clearer instructions for Codex. During this process, I identified several problems that were not obvious when designing individual screens, especially the difference between creating a Bento and managing it later.
+#### Key Updates
 
-This helped me understand that a working prototype needs more than functional buttons. Users also need clear navigation, predictable behaviour, and the freedom to adjust their plans.
+- **Navigation:** Simplified page headers by removing redundant labels and unnecessary Home links.
+- **Bento Management:** Added Rename and Delete options for saved Bentos.
+- **Repeated Editing:** Refined the flow so users can save changes and reopen an In Progress Bento without automatically finishing it.
+- **Finish Bento:** Defined an explicit action for moving a Bento to Completed.
+- **Capacity Extension:** Revised the +4h mechanism so extra capacity is available only when editing an existing In Progress Bento, not during initial planning.
+- **Data Consistency:** Focused on preserving task progress, Bento status, and saved information across editing sessions.
 
-### Next Steps
+#### Reflection
 
-Verify the updated interactions, check for remaining bugs, and prepare for user testing on October 30. The testing will focus on whether first-time users can understand the concept, complete the planning process, and manage their Bentos without additional instructions.
+I used ChatGPT to review the interaction logic, identify inconsistencies, and organise clearer implementation instructions for Codex.
+
+One important discovery was that creating a Bento and managing an existing Bento require different interaction rules.
+
+For example, the +4h mechanism should help users adjust an existing plan rather than increase the capacity during initial planning.
+
+This iteration made me pay more attention to predictable behaviour, user control, and the relationship between different parts of the experience.
+
+Some updated interactions still need to be verified in the final prototype.
+
+---
+
+## 04. AI Usage & Reflection
+
+AI played an important role throughout the development of BENTO BOX, but it did not replace my design decisions.
+
+### How I Used AI
+
+**ChatGPT**
+
+I used ChatGPT for brainstorming, analysing design problems, refining interaction rules, organising requirements, and reviewing the development process.
+
+**AI Image Generation**
+
+I used AI-assisted visual exploration and asset generation to develop the food illustration direction and experiment with different arrangements.
+
+**Codex**
+
+I used Codex to support the implementation and refinement of the interactive prototype, including layout logic, task management, and interface behaviour.
+
+### What Worked Well
+
+AI helped me move from an initial concept to an interactive prototype more quickly.
+
+It also allowed me to experiment with different solutions without having to build every variation manually.
+
+### Challenges & Limitations
+
+AI-generated results were not always consistent with my intentions.
+
+For example, the automatic plating system could follow basic placement instructions but still produce unnatural compositions.
+
+Some interaction changes also introduced unexpected behaviour or affected existing functions.
+
+I learned that detailed prompts alone do not guarantee good results. I still needed to review the outputs, identify problems, test the interactions, and decide which changes were necessary.
+
+### My Role in the Process
+
+My main responsibility was to define the concept, establish design rules, evaluate AI-generated results, and guide each iteration.
+
+Through this project, I learned that AI-assisted programming still requires an understanding of interaction logic, visual consistency, and how different functions affect one another.
+
+---
+
+## 05. User Testing
+
+*Planned for October 30, 2026.*
+
+The next step is to test BENTO BOX with a first-time user.
+
+The test will focus on whether users can:
+
+- Understand the concept of converting time into food portions
+- Create a Bento without additional instructions
+- Understand the capacity limits
+- Find and manage saved Bentos
+- Edit tasks and track progress
+- Understand when a Bento is considered completed
+
+I will record the user's actions, difficulties, and feedback, then document any changes made in response.
+
+*Testing observations and results will be added after the session.*
+
+---
+
+## 06. Next Steps
+
+- Verify the latest navigation and editing interactions.
+- Check the capacity extension and saved-data behaviour.
+- Conduct user testing and document the results.
+- Fix any remaining issues identified during testing.
+- Confirm that the GitHub Pages version matches the final prototype.
+- Complete the final submission.
+
+---
+
+## 07. Final Reflection
+
+*To be completed after user testing and final development.*
+
+The final reflection will summarise what I learned from building an interactive experience with AI-assisted programming, including the relationship between design decisions, implementation, and user feedback.
