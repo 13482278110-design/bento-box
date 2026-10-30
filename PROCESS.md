@@ -261,3 +261,51 @@ I will record the user's actions, difficulties, and feedback, then document any 
 *To be completed after user testing and final development.*
 
 The final reflection will summarise what I learned from building an interactive experience with AI-assisted programming, including the relationship between design decisions, implementation, and user feedback.
+
+## October 30, 2026 — User Testing & V8 Refinement
+
+**Focus:** Improving usability, interaction feedback, and information clarity based on real user testing.
+
+### 1. User Testing
+
+Conducted user testing to evaluate whether first-time users could understand and interact with BENTO BOX.
+
+Key findings:
+- Some users did not immediately understand the purpose of the product or how the food-based time planning system worked.
+- Users needed more flexibility to record partial task completion rather than marking an entire task as finished.
+- The transition between Welcome and Home was confusing.
+- Some interface labels and statistics were repetitive or unnecessarily complex.
+
+### 2. Onboarding & Navigation
+
+- Refined the Welcome page to explain the core concept: one food portion represents one hour.
+- Added a three-step introduction to help users understand the planning process.
+- Improved the navigation structure between Welcome, Home, Bento creation, and Collection.
+- Added a more accessible way to return Home after generating a Bento.
+
+### 3. Task Management
+
+- Introduced incremental task progress tracking using +/− controls.
+- Allowed users to record completed hours without finishing an entire task.
+- Updated Bento progress and remaining hours to reflect task completion.
+- Simplified task information by removing redundant status labels.
+
+### 4. Information Hierarchy
+
+- Reduced the main statistics from five categories to three: Planned, Completed, and Remaining.
+- Kept original goals and maximum capacity information in smaller indicators.
+- Moved available capacity information closer to task creation and editing.
+- Improved consistency between the initial planning interface and saved Bento management.
+
+### 5. Interaction & Performance Review
+
+- Identified intermittent click-response issues, particularly when switching between In Progress and Completed in My Collection.
+- Reviewed possible rendering and interaction performance problems.
+- Prioritized responsiveness, stable food placement, and reliable task updates for the final refinement stage.
+
+### Next Steps
+
+- Verify and fix remaining interaction bugs.
+- Complete browser testing and confirm saved data works correctly.
+- Update the GitHub Pages deployment to the final V8 version.
+- Finalize documentation and submission materials.
