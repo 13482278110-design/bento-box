@@ -178,134 +178,88 @@ For example, the +4h mechanism should help users adjust an existing plan rather 
 
 This iteration made me pay more attention to predictable behaviour, user control, and the relationship between different parts of the experience.
 
-Some updated interactions still need to be verified in the final prototype.
+---
+
+## 04. User Testing — October 30, 2026
+
+**Focus: Observing first-time use and refining the prototype into V8.**
+
+I conducted a first-time-use testing session to see whether the concept and main workflow were understandable without additional explanation. I observed the Welcome and Home transition, Bento creation, capacity selection, task management, progress tracking, and Collection.
+
+### Observed Problems
+
+- The purpose of BENTO BOX was not immediately clear. The relationship between a task, a food type, and its portions needed a more direct explanation.
+- Welcome and Home felt too similar, so it was unclear whether **Start Packing** and **Create a Bento** performed the same action.
+- Progress was too rigid. A long task could only be treated as unfinished or fully completed, even when only some planned hours were done.
+- Capacity guidance was easy to miss, especially the rule that one portion represents one hour and that the Bento does not need to be completely filled.
+- Repeated status labels and five summary statistics made the task-management screen harder to scan.
+- During later V8 quality checks, the **Completed** tab in My Collection sometimes required more than one click, which made the interface feel unreliable.
+
+### Changes Made in V8
+
+**1. Clearer onboarding and navigation**
+
+- Kept Welcome and Home as separate stages. Welcome explains the idea; **Start Packing** enters Home; **Create a Bento** begins planning.
+- Added a compact three-step guide using the existing container and food assets: choose time, pack tasks, and track progress.
+- Kept Home and the BENTO BOX logo as consistent routes back to the dashboard, and added a direct route back from the result page.
+
+**2. Progress by hour**
+
+- Replaced all-or-nothing task completion with `+` and `−` controls for completed hours.
+- Kept the rule **one portion = one hour**, so an eight-hour task can show progress such as 4/8 without creating fractional food.
+- Calculated task and Bento progress from completed hours while keeping **Finish Bento** as a separate, explicit action.
+- Saved partial progress with the existing Bento record so it can be restored when the plan is reopened.
+
+**3. Clearer information hierarchy**
+
+- Reduced the main summary to **Planned**, **Completed**, and **Remaining**.
+- Kept Original Goal and Maximum Capacity as smaller contextual indicators.
+- Moved **Available** capacity into the Add/Edit Task area, where it affects the user's decision.
+- Removed redundant “Not started” and “Done” labels because the TO DO and DONE sections already communicate status.
+- Added concise capacity instructions using the same “one portion = one hour” terminology as the Welcome page.
+
+**4. Interaction reliability**
+
+- Refined the Collection tab interaction so the whole visible tab area responds consistently.
+- Preserved saved Bento data, explicit In Progress/Completed states, and the existing food arrangement system while making these interface changes.
+
+### Testing Outcome
+
+The test changed my priorities. Instead of adding more features, I focused on explaining the existing concept, supporting realistic partial progress, and reducing unnecessary interface information. V8 keeps the original visual identity and planning metaphor while making the main actions and states easier to understand.
 
 ---
 
-## 04. AI Usage & Reflection
+## 05. AI Usage & Reflection
 
-AI played an important role throughout the development of BENTO BOX, but it did not replace my design decisions.
+AI supported ideation, visual exploration, requirement writing, implementation, and debugging, but I remained responsible for selecting, testing, and revising the results.
 
-### How I Used AI
+### Tools and Uses
 
-**ChatGPT**
+- **ChatGPT:** brainstorming, interface critique, clarifying interaction rules, and turning feedback into structured implementation requirements.
+- **AI-assisted image generation:** exploring the food illustration direction and producing visual assets that were then selected and refined for this project.
+- **Codex:** implementing and debugging the HTML, CSS, JavaScript, plating logic, local storage, task management, and export behaviour.
 
-I used ChatGPT for brainstorming, analysing design problems, refining interaction rules, organising requirements, and reviewing the development process.
+### Decisions I Accepted, Modified, or Rejected
 
-**AI Image Generation**
+I accepted the AI-assisted suggestion to separate saving a plan from finishing it. This became the distinction between **In Progress** and **Completed**, with an explicit **Finish Bento** action. It gave users more control and allowed the same Bento to be reopened and edited.
 
-I used AI-assisted visual exploration and asset generation to develop the food illustration direction and experiment with different arrangements.
+I modified or rejected several early AI-generated plating solutions. Fixed grids, uniform scaling, and widely separated food groups were technically valid but visually weak. I replaced these results with my own rules for XS–L ingredient sizes, P1–P4 visual priorities, same-food grouping, container-aware boundaries, and compact composition. I also rejected interface changes when they added duplicate labels or made existing interactions less predictable.
 
-**Codex**
-
-I used Codex to support the implementation and refinement of the interactive prototype, including layout logic, task management, and interface behaviour.
-
-### What Worked Well
-
-AI helped me move from an initial concept to an interactive prototype more quickly.
-
-It also allowed me to experiment with different solutions without having to build every variation manually.
-
-### Challenges & Limitations
-
-AI-generated results were not always consistent with my intentions.
-
-For example, the automatic plating system could follow basic placement instructions but still produce unnatural compositions.
-
-Some interaction changes also introduced unexpected behaviour or affected existing functions.
-
-I learned that detailed prompts alone do not guarantee good results. I still needed to review the outputs, identify problems, test the interactions, and decide which changes were necessary.
-
-### My Role in the Process
-
-My main responsibility was to define the concept, establish design rules, evaluate AI-generated results, and guide each iteration.
-
-Through this project, I learned that AI-assisted programming still requires an understanding of interaction logic, visual consistency, and how different functions affect one another.
+These examples showed me that AI output is a proposal, not a final design decision. Detailed prompts helped, but visual judgement, user testing, regression checks, and repeated adjustment were still necessary.
 
 ---
 
-## 05. User Testing
+## 06. Final Reflection
 
-*Planned for October 30, 2026.*
+BENTO BOX taught me that interaction design is not only about making features work. The visual metaphor must be explained clearly, state changes must be predictable, and the interface must support how people actually complete work. User testing revealed problems that were difficult to notice while designing alone, especially the confusing Welcome/Home relationship and the need to record partial hours.
 
-The next step is to test BENTO BOX with a first-time user.
-
-The test will focus on whether users can:
-
-- Understand the concept of converting time into food portions
-- Create a Bento without additional instructions
-- Understand the capacity limits
-- Find and manage saved Bentos
-- Edit tasks and track progress
-- Understand when a Bento is considered completed
-
-I will record the user's actions, difficulties, and feedback, then document any changes made in response.
-
-*Testing observations and results will be added after the session.*
+AI helped me explore and implement ideas quickly, but it also produced layouts and interactions that looked complete before they were truly usable. My role was to set the rules, compare outputs, reject weak solutions, and protect the coherence of the experience. The final prototype is stronger because visual design, interaction logic, testing, and AI-assisted development were treated as one iterative process.
 
 ---
 
-## 06. Next Steps
+## 07. Credits & References
 
-- Verify the latest navigation and editing interactions.
-- Check the capacity extension and saved-data behaviour.
-- Conduct user testing and document the results.
-- Fix any remaining issues identified during testing.
-- Confirm that the GitHub Pages version matches the final prototype.
-- Complete the final submission.
-
----
-
-## 07. Final Reflection
-
-*To be completed after user testing and final development.*
-
-The final reflection will summarise what I learned from building an interactive experience with AI-assisted programming, including the relationship between design decisions, implementation, and user feedback.
-
-## October 30, 2026 — User Testing & V8 Refinement
-
-**Focus:** Improving usability, interaction feedback, and information clarity based on real user testing.
-
-### 1. User Testing
-
-Conducted user testing to evaluate whether first-time users could understand and interact with BENTO BOX.
-
-Key findings:
-- Some users did not immediately understand the purpose of the product or how the food-based time planning system worked.
-- Users needed more flexibility to record partial task completion rather than marking an entire task as finished.
-- The transition between Welcome and Home was confusing.
-- Some interface labels and statistics were repetitive or unnecessarily complex.
-
-### 2. Onboarding & Navigation
-
-- Refined the Welcome page to explain the core concept: one food portion represents one hour.
-- Added a three-step introduction to help users understand the planning process.
-- Improved the navigation structure between Welcome, Home, Bento creation, and Collection.
-- Added a more accessible way to return Home after generating a Bento.
-
-### 3. Task Management
-
-- Introduced incremental task progress tracking using +/− controls.
-- Allowed users to record completed hours without finishing an entire task.
-- Updated Bento progress and remaining hours to reflect task completion.
-- Simplified task information by removing redundant status labels.
-
-### 4. Information Hierarchy
-
-- Reduced the main statistics from five categories to three: Planned, Completed, and Remaining.
-- Kept original goals and maximum capacity information in smaller indicators.
-- Moved available capacity information closer to task creation and editing.
-- Improved consistency between the initial planning interface and saved Bento management.
-
-### 5. Interaction & Performance Review
-
-- Identified intermittent click-response issues, particularly when switching between In Progress and Completed in My Collection.
-- Reviewed possible rendering and interaction performance problems.
-- Prioritized responsiveness, stable food placement, and reliable task updates for the final refinement stage.
-
-### Next Steps
-
-- Verify and fix remaining interaction bugs.
-- Complete browser testing and confirm saved data works correctly.
-- Update the GitHub Pages deployment to the final V8 version.
-- Finalize documentation and submission materials.
+- The 144 food illustrations and six container designs were developed for BENTO BOX through AI-assisted visual exploration and iterative art direction. I selected, reviewed, processed, and integrated the assets into the final interface.
+- The **Plating Composition Reference** was generated with AI during visual exploration. It was used to study food grouping, spacing, and composition rather than as a final asset.
+- ChatGPT was used for ideation, critique, and requirement development. Codex was used for implementation and debugging support.
+- The October 30 findings in this document come from the project’s first-time-use testing session and the subsequent V8 refinement process. No participant quotes or performance statistics have been added because they were not recorded.
